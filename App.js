@@ -1,5 +1,6 @@
 import React from 'react'
 import Router from './Router/Router'
+import Navbar from './components/UIComponents/Navbar'
 import {NavLink} from 'react-router-dom'
 
 
@@ -15,9 +16,10 @@ class App extends React.Component {
   render() {
     return (
       <div>
-          <h1>HomePage</h1>
-          <Router/>
+          <Navbar/>
           <Navigation/>
+          <Router/>
+          
       </div>
     );
   }
