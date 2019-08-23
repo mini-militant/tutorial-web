@@ -17,10 +17,7 @@ class App extends React.Component {
     return (
       <div>
           <Navbar/>
-          
-          
-          <Router/>
-          
+          <Router/>          
       </div>
     );
   }

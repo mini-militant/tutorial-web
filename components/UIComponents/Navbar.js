@@ -17,7 +17,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
-
+import '../..style.css'
 const drawerWidth = 240;
 
 const useStyles = makeStyles(theme => ({
@@ -28,6 +28,7 @@ const useStyles = makeStyles(theme => ({
     transition: theme.transitions.create(['margin', 'width'], {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
+      
     }),
   },
   appBarShift: {
@@ -94,6 +95,7 @@ export default function Navbar() {
       <CssBaseline />
       <AppBar
         position="fixed"
+        id="navbar"
         className={clsx(classes.appBar, {
           [classes.appBarShift]: open,
         })}
@@ -113,7 +115,7 @@ export default function Navbar() {
           </Typography>
         </Toolbar>
       </AppBar>
-      
+
       <Drawer
         className={classes.drawer}
         variant="persistent"
