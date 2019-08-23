@@ -1,6 +1,7 @@
 import React from 'react'
 import Router from './Router/Router'
 import Navbar from './components/UIComponents/Navbar'
+import Cards from './components/UIComponents/Cards'
 import {NavLink} from 'react-router-dom'
 
 
@@ -17,6 +18,7 @@ class App extends React.Component {
     return (
       <div>
           <Navbar/>
+          <Cards/>
           <Router/>          
       </div>
     );
