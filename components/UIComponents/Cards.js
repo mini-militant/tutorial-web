@@ -8,14 +8,17 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import * as imgSrc from './imgUrl'
-import '../../style.css'
+import '../../styles/card'
 
 export default function Cards(props) {
  
   return (
-    <Card className="card">
-      <CardActionArea>
+    <div className="container">
+      
+      <Card className="card">
+        <CardActionArea>
         <CardMedia
+          id="imageIcon"
           component="img"
           alt="React"
           height="140"
@@ -28,7 +31,8 @@ export default function Cards(props) {
           </Typography>          
         </CardContent>
       </CardActionArea>
-      
     </Card>
+    
+   </div> 
   );
 }

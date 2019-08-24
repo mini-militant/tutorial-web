@@ -4,7 +4,7 @@ import Navbar from './components/UIComponents/Navbar'
 import Cards from './components/UIComponents/Cards'
 import {NavLink} from 'react-router-dom'
 import * as imgSrc from './components/UIComponents/imgUrl'
-
+import './styles/card'
 const Navigation =(props)=>{
   return(
     <nav>
@@ -18,9 +18,10 @@ class App extends React.Component {
     return (
       <div>
           <Navbar/>
+          <div className="flex-container">
           <Cards name="React" imgUrl={imgSrc.react_img}/>
           <Cards name="Redux" imgUrl={imgSrc.redux_img}/>
-          
+          </div>
           <Router/>          
       </div>
     );
