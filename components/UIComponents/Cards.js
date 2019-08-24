@@ -7,43 +7,28 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import * as imgSrc from './imgUrl'
+import '../../style.css'
 
-const useStyles = makeStyles({
-  card: {
-    maxWidth: 220,
-    maxHeight:220,
-    
-  },
-
-});
-
-export default function Cards() {
-  const classes = useStyles();
-
+export default function Cards(props) {
+ 
   return (
-    <Card className={classes.card}>
+    <Card className="card">
       <CardActionArea>
         <CardMedia
           component="img"
           alt="React"
           height="140"
-          image="https://miro.medium.com/max/1200/1*y6C4nSvy2Woe0m7bWEn4BA.png"
+          image={props.imgUrl}
           title="React"
         />
         <CardContent >
           <Typography gutterBottom variant="h5" component="h2">
-            React
+            {props.name}
           </Typography>          
         </CardContent>
       </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
-        </Button>
-      </CardActions>
+      
     </Card>
   );
 }

@@ -12,5 +12,8 @@ body{
 }
 
 .card{
-  width:150;
+  max-width:220px; 
+  max-height:220px;
+  position:center;
+  
 }
