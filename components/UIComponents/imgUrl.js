@@ -5,4 +5,4 @@ export const redux_img = "https://cms-assets.tutsplus.com/uploads/users/1795/pos
 
 export const JS_img="https://cdn-media-1.freecodecamp.org/images/1*H-25KB7EbSHjv70HXrdl6w.png"
 
-export const background_img = "https://images.pexels.com/photos/949193/pexels-photo-949193.jpeg?cs=srgb&dl=background-cave-clouds-949193.jpg&fm=jpg"
+export const background_img = "https://www.uschamber.com/sites/default/files/dear45_67832501_1600x1066.jpg"

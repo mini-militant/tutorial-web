@@ -4,13 +4,14 @@ import '../../styles/style.css'
 
 const FrontPage=()=>{
   return(
-    <div className="container">
-      <img  class ="img-front-background"
-       src={imgUrl.background_img}
-      alt="backgroundImg"
-      />
-    </div>
+    <section id="showcase">
+      <div className="container">
+        <h1>Affordable Web Design For Small And Medium-Sized Companies</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero cum tempore, consequuntur culpa repellendus perspiciatis, atque corporis a ut nobis ratione odit tenetur nesciunt asperiores expedita eius sed, neque optio.</p>
+      </div>
+    </section>
   )
+
 }
 
 

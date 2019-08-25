@@ -7,12 +7,41 @@ h1, p {
   
 }
 body{
- background-image: url("https://motionarray.imgix.net/preview-96850-dG4cFMRkj4-high_0002.jpg?w=750&q=60&fit=max&auto=format");
  
+  height: 100%;
+  margin: 0;
 }
 
-.img-front-background{
-  max-width:100%;
+/* .bg{
+  background-image: url("https://www.uschamber.com/sites/default/files/dear45_67832501_1600x1066.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height:400px;
+} */
+/* .img-front-background{
+  max-width: 100%;
+  height: auto;
+  
+} */
+
+
+#showcase {
+  min-height: 450px;
+  background:url('https://www.uschamber.com/sites/default/files/dear45_67832501_1600x1066.jpg') no-repeat center;
+  background-size: cover;
+  text-align: center;
+  color: #ffffff;
 }
 
+#showcase h1{
+  margin-top: 16px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+#showcase p{
+  font-size: 20px;
+}
 

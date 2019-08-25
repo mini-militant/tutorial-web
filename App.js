@@ -6,6 +6,7 @@ import {NavLink} from 'react-router-dom'
 import * as imgSrc from './components/UIComponents/imgUrl'
 import FrontPage from './components/UIComponents/FrontPage'
 import './styles/card'
+import './styles/style'
 const Navigation =(props)=>{
   return(
     <nav>
@@ -17,15 +18,17 @@ const Navigation =(props)=>{
 class App extends React.Component {
   render() {
     return (
-      <div className="container">
-          <Navbar/>
+        <div>
+          <Navbar/>          
           <FrontPage/>
+        <div className="container">            
           <div className="flex-container">
           <Cards name="React" imgUrl={imgSrc.react_img}/>
           <Cards name="Redux" imgUrl={imgSrc.redux_img}/>
           <Cards name="JS" imgUrl={imgSrc.JS_img}/>
           </div>
           <Router/>          
+      </div>
       </div>
     );
   }
