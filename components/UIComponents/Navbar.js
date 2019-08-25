@@ -6,6 +6,14 @@ const Navbar=()=>{
     <div>
       <nav className="navbar" id="navbar">
         <a className="navbar-brand" href="#">Navbar</a>
+        <nav>
+          <ul>
+            <li className="current">
+            <a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+          </ul>
+        </nav>
       </nav>
     </div>
   )
