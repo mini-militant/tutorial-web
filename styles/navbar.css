@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik:400,700&display=swap');
 
 #navbar{
-  color:#41444a
-
+  color:#41444a;
+  
 }
 
 #navbar .navbar-brand{
@@ -15,7 +15,7 @@
 #navbar nav{
   float: right;
   margin-top: 10px;
-}
+} 
 
 #navbar .highlight, #navbar .current a {
   color: #32a0c2;
@@ -28,7 +28,7 @@
 }
 
 #navbar li{
-  float: left;
+   float: left; 
   display: inline;
   padding: 0 20px 0 20px;
 }

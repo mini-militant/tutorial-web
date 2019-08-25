@@ -9,8 +9,9 @@ const FrontPage=()=>{
       <div id="back-img">
       <div className="container">
         <div className="content">
-        <h1>Affordable Web Design For Small And Medium-Sized Companies</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero cum tempore, consequuntur culpa repellendus perspiciatis, atque corporis a ut nobis ratione odit tenetur nesciunt asperiores expedita eius sed, neque optio.</p>
+        <h1>Learn Something Trending</h1>
+        <h5>Tired of looking for trending tech tutorials! Your wait is over.</h5>
+        <h5> Scroll down to find the trending tech stacks.</h5>
         </div>
       </div>
       </div>
