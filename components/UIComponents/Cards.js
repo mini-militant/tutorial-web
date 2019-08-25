@@ -9,7 +9,7 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import * as imgSrc from './imgUrl'
 import '../../styles/card'
-
+import FrontPage from './FrontPage'
 export default function Cards(props) {
  
   return (

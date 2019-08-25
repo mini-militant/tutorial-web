@@ -3,16 +3,16 @@ h1, p {
 }
 
 #navbar {
-  background-color:#eb903b;
+  background-color:#41444a;
   
 }
 body{
+ background-image: url("https://motionarray.imgix.net/preview-96850-dG4cFMRkj4-high_0002.jpg?w=750&q=60&fit=max&auto=format");
  
-  
 }
 
 .img-front-background{
-  max-height:30%;
   max-width:100%;
 }
+
 

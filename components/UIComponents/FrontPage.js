@@ -4,8 +4,11 @@ import '../../styles/style.css'
 
 const FrontPage=()=>{
   return(
-    <div>
-      <img  class ="img-front-background" src={imgUrl.background_img} alt="backgroundImg"/>
+    <div className="container">
+      <img  class ="img-front-background"
+       src={imgUrl.background_img}
+      alt="backgroundImg"
+      />
     </div>
   )
 }
