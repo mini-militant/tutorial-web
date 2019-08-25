@@ -1,10 +1,11 @@
 import React from 'react'
 import * as imgUrl from './imgUrl'
+import '../../styles/style.css'
 
 const FrontPage=()=>{
   return(
     <div>
-      <img  class ="img" src={imgUrl.background_img} alt="backgroundImg"/>
+      <img  class ="img-front-background" src={imgUrl.background_img} alt="backgroundImg"/>
     </div>
   )
 }

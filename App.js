@@ -23,6 +23,7 @@ class App extends React.Component {
           <div className="flex-container">
           <Cards name="React" imgUrl={imgSrc.react_img}/>
           <Cards name="Redux" imgUrl={imgSrc.redux_img}/>
+          <Cards name="JS" imgUrl={imgSrc.JS_img}/>
           </div>
           <Router/>          
       </div>
