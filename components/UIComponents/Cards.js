@@ -24,7 +24,7 @@ export default function Cards(props) {
           height="140"
           image={props.imgUrl}
           title="React"
-        />
+          />
         <CardContent >
           <Typography gutterBottom variant="h5" component="h2">
             {props.name}

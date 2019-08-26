@@ -11,6 +11,17 @@ import './styles/style'
 
 
 class App extends React.Component {
+  constructor(props){
+    super(props);
+    this.state={
+      isClicked:false
+    }
+  }
+
+  onClick=()=>{
+    console.log('cllicked from react');
+  }
+
   render() {
     return (
         <div>
@@ -18,7 +29,7 @@ class App extends React.Component {
           <FrontPage/> 
           <div className="container">
             <div className="flex-container">      
-              <Cards name="React" imgUrl={imgSrc.react_img}/>
+              <Cards name="React" imgUrl={imgSrc.react_img} reactClicked={this.onClick}/>
               <Cards name="Redux" imgUrl={imgSrc.redux_img}/>
               <Cards name="JS" imgUrl={imgSrc.JS_img}/>
        </div>
