@@ -15,7 +15,7 @@ export default function Cards(props) {
   return (
     <div className="container">
       
-      <Card className="card">
+      <Card className="card" onClick={props.reactClicked}>
         <CardActionArea>
         <CardMedia
           id="imageIcon"
