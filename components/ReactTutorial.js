@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ReactTutorial=()=>{
+const ReactTutorial=(props)=>{
   return(
     <div>
       <h1>React Tutorial</h1>

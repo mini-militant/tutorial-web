@@ -2,7 +2,6 @@
 
 #navbar{
   color:#41444a;
-  
 }
 
 #navbar .navbar-brand{
@@ -28,7 +27,7 @@
 }
 
 #navbar li{
-   float: left; 
+  float: left; 
   display: inline;
   padding: 0 20px 0 20px;
 }
