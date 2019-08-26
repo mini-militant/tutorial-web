@@ -10,6 +10,10 @@ const Navigation=()=>{
     <nav>
     <div className="container">
     <div className="flex-container">
+
+      <NavLink to='/'>
+      
+      </NavLink>
       
       <NavLink to='/react'>
       <Cards name="React" imgUrl={imgSrc.react_img}/>
