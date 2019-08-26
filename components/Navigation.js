@@ -10,13 +10,18 @@ const Navigation=()=>{
     <nav>
     <div className="container">
     <div className="flex-container">
-      <NavLink to='/'>
+      
+      <NavLink to='/react'>
       <Cards name="React" imgUrl={imgSrc.react_img}/>
       </NavLink> 
-      <NavLink to='/react'><Cards name="Redux" imgUrl={imgSrc.redux_img}/></NavLink>
-        <NavLink to="/redux">
+      
+      <NavLink to='/redux'>
+      <Cards name="Redux" imgUrl={imgSrc.redux_img}/></NavLink>
+      
+      <NavLink to="/JS">
        <Cards name="JS" imgUrl={imgSrc.JS_img}/>
        </NavLink>
+      
        </div>
        </div>
     </nav>
