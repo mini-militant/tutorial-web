@@ -3,7 +3,7 @@ import App from '../App'
 const Home=(props)=>{
   return(
     <div>
-      <App/>
+      <h1>Hello</h1>
     </div>
   )
 }
