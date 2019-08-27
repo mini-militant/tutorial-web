@@ -22,7 +22,7 @@ class App extends React.Component {
   ReactClicked=()=>{
     console.log('cllicked from react');
     return(
-      <NavbarReact/>
+      <div>Hi</div>
     )
   }
 
