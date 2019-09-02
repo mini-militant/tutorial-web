@@ -10,24 +10,46 @@ import Typography from '@material-ui/core/Typography';
 import * as imgSrc from './imgUrl'
 import '../../styles/card'
 import FrontPage from './FrontPage'
-export default function Cards(props) {
- 
+import {Redirect} from 'react-router-dom'
+
+import { createBrowserHistory } from 'history';
+
+const history = createBrowserHistory();
+
+
+class Cards extends React.Component {
+ state = {
+    toTutorial: false,
+  }
+
+  handleClick=()=>{
+    this.setState({
+      toTutorial:true
+    })
+    
+
+}
+  render(){
+    if(this.state.toTutorial===true){
+      this.props.history.push('/react');
+    }
+
   return (
     <div className="container">
       
-      <Card className="card" onClick={props.reactClicked}>
+      <Card className="card" onClick={this.handleClick}>
         <CardActionArea>
         <CardMedia
           id="imageIcon"
           component="img"
-          alt="React"
+          alt="img"
           height="140"
-          image={props.imgUrl}
-          title="React"
+          image={this.props.imgUrl}
+         
           />
         <CardContent >
           <Typography gutterBottom variant="h5" component="h2">
-            {props.name}
+            {this.props.name}
           </Typography>          
         </CardContent>
       </CardActionArea>
@@ -36,3 +58,6 @@ export default function Cards(props) {
    </div> 
   );
 }
+
+}
+export default Cards

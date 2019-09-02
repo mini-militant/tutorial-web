@@ -15,6 +15,9 @@ import { createBrowserHistory } from 'history';
 const history = createBrowserHistory();
 // https://tylermcginnis.com/react-router-programmatically-navigate/
 
+const REACT='React';
+const REDUX='Redux';
+
 class App extends React.Component {
   constructor(props){
     super(props);
@@ -24,13 +27,9 @@ class App extends React.Component {
   }
 
   ReactClicked=()=>{
-    
-    this.props.history.push('/react');
+      this.props.history.push('/react');    
   }
-  ReduxClicked=()=>{
-    
-    this.props.history.push('/redux');
-  }
+  
 
   render() {
     
@@ -40,8 +39,8 @@ class App extends React.Component {
           <FrontPage/> 
           <div className="container">
             <div className="flex-container">      
-              <Cards name="React" imgUrl={imgSrc.react_img} reactClicked={this.ReactClicked}/>
-              <Cards name="Redux" imgUrl={imgSrc.redux_img} reduxClicked={this.ReduxClicked}/>
+              <Cards name={REACT} imgUrl={imgSrc.react_img} reactClicked={this.ReactClicked}/>
+              <Cards name={REDUX} imgUrl={imgSrc.redux_img} reduxClicked={this.ReduxClicked}/>
               <Cards name="JS" imgUrl={imgSrc.JS_img}/>
        </div>
        </div>            

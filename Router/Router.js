@@ -3,7 +3,7 @@ import {BrowserRouter,Switch,Route} from 'react-router-dom'
 import App from '../App'
 import ReactTutorial from '../components/ReactTutorial'
 import ReduxTutorial from '../components/ReduxTutorial'
-import JSTutorial from '../components/JSTutorial'
+import JSTutorial from '../components/ReactTutorial'
 const Router = () => {
   return(
     <BrowserRouter>
