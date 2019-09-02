@@ -10,7 +10,7 @@ import Typography from '@material-ui/core/Typography';
 import * as imgSrc from './imgUrl'
 import '../../styles/card'
 import FrontPage from './FrontPage'
-import {Redirect} from 'react-router-dom'
+import {withRouter} from 'react-router-dom'
 
 import { createBrowserHistory } from 'history';
 
@@ -30,8 +30,15 @@ class Cards extends React.Component {
 
 }
   render(){
-    if(this.state.toTutorial===true){
+    console.log(this.props.name)
+    if(this.state.toTutorial===true && this.props.name==='React'){
       this.props.history.push('/react');
+    }
+    if(this.state.toTutorial===true && this.props.name==='Redux'){
+      this.props.history.push('/redux');
+    }
+    if(this.state.toTutorial===true && this.props.name==='JS'){
+      this.props.history.push('/js');
     }
 
   return (
@@ -60,4 +67,4 @@ class Cards extends React.Component {
 }
 
 }
-export default Cards
+export default withRouter(Cards)

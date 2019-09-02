@@ -39,8 +39,8 @@ class App extends React.Component {
           <FrontPage/> 
           <div className="container">
             <div className="flex-container">      
-              <Cards name={REACT} imgUrl={imgSrc.react_img} reactClicked={this.ReactClicked}/>
-              <Cards name={REDUX} imgUrl={imgSrc.redux_img} reduxClicked={this.ReduxClicked}/>
+              <Cards name={REACT} imgUrl={imgSrc.react_img} />
+              <Cards name={REDUX} imgUrl={imgSrc.redux_img} />
               <Cards name="JS" imgUrl={imgSrc.JS_img}/>
        </div>
        </div>            
