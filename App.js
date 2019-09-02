@@ -10,6 +10,9 @@ import NavbarReact from './components/ReactTutorials/NavbarReact'
 import ReactTutorial from './components/ReactTutorial'
 import './styles/card'
 import './styles/style'
+import { createBrowserHistory } from 'history';
+
+const history = createBrowserHistory();
 // https://tylermcginnis.com/react-router-programmatically-navigate/
 
 class App extends React.Component {
@@ -21,15 +24,11 @@ class App extends React.Component {
   }
 
   ReactClicked=()=>{
-    this.setState({
-      isClicked:true
-    })
+    this.props.history.push('/react');
   }
 
   render() {
-    if (this.state.isClicked===true){
-      return <Redirect to='/react' component={ReactTutorial}/>
-    }
+    
     return (
         <div>
           <Navbar/>          
@@ -42,7 +41,7 @@ class App extends React.Component {
        </div>
        </div>            
                  
-          <Router/>       
+                
       </div>
     );
   }
