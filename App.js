@@ -2,14 +2,15 @@ import React from 'react'
 import Router from './Router/Router'
 import Navbar from './components/UIComponents/Navbar'
 import Cards from './components/UIComponents/Cards'
-
+import {Redirect} from 'react-router-dom'
 import * as imgSrc from './components/UIComponents/imgUrl'
 import FrontPage from './components/UIComponents/FrontPage'
 import Navigation from './components/Navigation'
 import NavbarReact from './components/ReactTutorials/NavbarReact'
+import ReactTutorial from './components/ReactTutorial'
 import './styles/card'
 import './styles/style'
-
+// https://tylermcginnis.com/react-router-programmatically-navigate/
 
 class App extends React.Component {
   constructor(props){
@@ -20,13 +21,15 @@ class App extends React.Component {
   }
 
   ReactClicked=()=>{
-    console.log('cllicked from react');
-    return(
-      <div>Hi</div>
-    )
+    this.setState({
+      isClicked:true
+    })
   }
 
   render() {
+    if (this.state.isClicked===true){
+      return <Redirect to='/react' component={ReactTutorial}/>
+    }
     return (
         <div>
           <Navbar/>          
