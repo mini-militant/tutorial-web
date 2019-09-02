@@ -27,6 +27,10 @@ class App extends React.Component {
     
     this.props.history.push('/react');
   }
+  ReduxClicked=()=>{
+    
+    this.props.history.push('/redux');
+  }
 
   render() {
     
@@ -37,7 +41,7 @@ class App extends React.Component {
           <div className="container">
             <div className="flex-container">      
               <Cards name="React" imgUrl={imgSrc.react_img} reactClicked={this.ReactClicked}/>
-              <Cards name="Redux" imgUrl={imgSrc.redux_img} />
+              <Cards name="Redux" imgUrl={imgSrc.redux_img} reduxClicked={this.ReduxClicked}/>
               <Cards name="JS" imgUrl={imgSrc.JS_img}/>
        </div>
        </div>            
