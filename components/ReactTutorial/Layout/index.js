@@ -21,6 +21,7 @@ import { makeStyles, useTheme } from '@material-ui/core/styles';
 import {Link,Route} from 'react-router-dom';
 import Environment from '../Environment'
 import InternalPageRouting from './InternalPageRouting'
+import topics from '../../../data/topics'
 const drawerWidth = 240;
 
 const useStyles = makeStyles(theme => ({
@@ -67,6 +68,7 @@ function ResponsiveDrawer(props) {
   function handleDrawerToggle() {
     setMobileOpen(!mobileOpen);
   }
+  
 
   const drawer = (
     <div>
@@ -75,10 +77,16 @@ function ResponsiveDrawer(props) {
       <Divider />
       
       <MenuList>
-        <MenuItem component={Link} to='/react/home' >React - Home</MenuItem>
+      
+      {topics.map(({name,id})=>(
+        <div key={id}>
+        <MenuItem >
+          <Link to={`/react/${id}`}>{name}</Link>
+          
+        </MenuItem>
         <Divider />
-        <MenuItem component={Link} to='/react/environment'>React - Environment Setup </MenuItem>
-        <Divider />
+        </div>
+      ))}
       </MenuList>
       
     </div>
