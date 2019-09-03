@@ -19,6 +19,8 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import {Link,Route} from 'react-router-dom';
+import Environment from '../Environment'
+import InternalPageRouting from './InternalPageRouting'
 const drawerWidth = 240;
 
 const useStyles = makeStyles(theme => ({
@@ -73,7 +75,7 @@ function ResponsiveDrawer(props) {
       <Divider />
       
       <MenuList>
-        <MenuItem component={Link} to='/' >React - Home</MenuItem>
+        <MenuItem component={Link} to='/react/home' >React - Home</MenuItem>
         <Divider />
         <MenuItem component={Link} to='/react/environment'>React - Environment Setup </MenuItem>
         <Divider />
@@ -133,7 +135,8 @@ function ResponsiveDrawer(props) {
         </Hidden>
       </nav>
       <main className={classes.content}>
-        {children}
+        {children}     
+        <InternalPageRouting/>
       </main>
     </div>
   );
