@@ -40,6 +40,7 @@ const useStyles = makeStyles(theme => ({
   },
   box: {
     backgroundColor: 'black',
+    textColor:'white',
     padding: '5px',
     border: '0.01px solid'
   }
@@ -66,7 +67,9 @@ const ReactJSX = (props) => {
             <p>
               React doesn’t require using JSX, but most people find it helpful as a visual aid when working with UI inside the JavaScript code.
           </p>
-            
+            <div className={classes.box}>
+              cd my-app
+          </div>
           </section>
 
         </div>
