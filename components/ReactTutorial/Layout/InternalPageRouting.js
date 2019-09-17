@@ -3,6 +3,7 @@ import {Switch,Route} from 'react-router-dom'
 import Home from '../Home'
 import Environment from '../Environment'
 import Layout from './Layout'
+import JSX from '../JSX'
 
 const InternalPageRouting=()=>{
   return(
@@ -10,6 +11,7 @@ const InternalPageRouting=()=>{
      <Switch>
     <Route exact path='/react/home' component={Home}/>
     <Route  path='/react/environment' component={Environment}/>
+    <Route  path='/react/jsx' component={JSX}/>
   </Switch>
   
   )
